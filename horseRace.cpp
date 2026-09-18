@@ -39,7 +39,6 @@ void advance(int horseNum, int* horses){
   if(coin == 1){
       horses[horseNum]++;
   }// end if
-  
 } // end advance
 
 void printLane(int horseNum, int* horses){
