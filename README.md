@@ -64,3 +64,38 @@ The player will be able to bet off of this
 Alternatively, each horse could use a different die to determine their movement. 0 uses a d2, 1 uses a d4, 2 uses a d6, 3 uses a d12, and 4 uses a d20. Not sure if this would effect the odds.
 
 Each horse could have a unique movement pattern. For example, one horse could move at a constant pace (1 tile every 2 turns), one could leap forward (2 tiles on a % of 3), one could start fast and get slower (start with an 80% chance to move, but slowly decrease down to 40% as the turns continue), shiny horse (1/8192 to just win), invisible horse (Coin flip, but you can't see where it is on the field).
+
+```
+add a turn counter
+int turn = 1;
+
+void steadyAdvance(int horseNum, int* horses);
+     int steadyMove = turn % 2;
+          horses[horseNum] + steadyMove;
+
+void leapAdvance(int horseNum, int* horses);
+     int coin = rand() % 3;
+     if (coin = 2)
+          horses[horseNum] + 2;
+
+void burstAdvance(int horseNum, int* horses);
+     if(turn > 8){
+     int coin = rand() % 5;
+     if (!(coin = 0))
+          horses[horseNum]++
+     }else{
+          int coin = rand() % 4
+          if (coin = 3)
+               horses[horseNum]++
+     }
+
+void shinyAdvance(int horseNum, int* horses);
+     int shinyCheck = rand() % 8192;
+     if (coin = 1)
+          horses[horseNum] = BOARDSIZE;
+
+void advance(int horseNum, int* horses);
+     int coin = rand() % 2;
+     if (coin = 1)
+          horses[horseNum]++
+```
