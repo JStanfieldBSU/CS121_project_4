@@ -13,6 +13,7 @@ array of horsePosition[5] where the horseNum refers to the slot in the array and
 ```
 
 how to replace these without it being an array and filling every field with a . and replacing it with the position of a horse after that initializes each turn.
+
 take the array of horses, have two for loops. First loop goes through each horse, second loop goes through each space. If the space matches the number held within the horse array (checked by comparing with the second loops sentinel), replace that space with the horse's number.
 
 ```
